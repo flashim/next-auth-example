@@ -256,7 +256,7 @@ const columns = [
 ]
 
 //.. to come from utils
-const flatten = (_arr: any) => {
+const flatten:any = (_arr: any) => {
   let arr = [..._arr]
   return arr.reduce(function (flat: any, toFlatten: any) {
     return flat.concat(
