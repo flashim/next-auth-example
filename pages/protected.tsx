@@ -3,6 +3,10 @@ import { useSession } from "next-auth/react"
 import Layout from "../components/layout"
 import AccessDenied from "../components/access-denied"
 
+import { GitHub } from "../components/github"
+import { GitHub2 } from "../components/github2"
+      
+
 export default function ProtectedPage() {
   const { data: session, status } = useSession()
   const loading = status === "loading"
@@ -28,6 +32,12 @@ export default function ProtectedPage() {
     return (
       <Layout>
         <AccessDenied />
+        <div>
+        <p>
+          <h3>Infinite scrolling</h3>
+        </p>
+        <GitHub />
+        </div>
       </Layout>
     )
   }
@@ -39,6 +49,12 @@ export default function ProtectedPage() {
       <p>
         <strong>{content ?? "\u00a0"}</strong>
       </p>
+      <hr/>
+      <br/>
+      <div >
+        <h3>Infinite scrolling using shadowRoot</h3>
+      <GitHub2 />
+      </div>
     </Layout>
   )
 }
