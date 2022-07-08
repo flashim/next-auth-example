@@ -9,6 +9,8 @@ export default function IndexPage() {
         <a href="https://next-auth.js.org">NextAuth.js</a> for authentication.      
       </p>
       <hr/>
+      <p>User: oktauser@persistent.com</p>
+      <p>Pass: admin@123</p>
     </Layout>
   )
 }
