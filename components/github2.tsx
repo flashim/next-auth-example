@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react"
 import useSWRInfinite from "swr/infinite"
 import InfiniteScroll from "react-swr-infinite-scroll"
 import ReactShadowRoot from "react-shadow-root"
-import { StatefulTable } from "carbon-addons-iot-react"
-import styled from "styled-components"
+import  styled  from 'styled-components';
+import { StatefulTable } from 'carbon-addons-iot-react';
+
 
 const PAGE_SIZE = 5
 
