@@ -3,8 +3,8 @@ import { useSession } from "next-auth/react"
 import Layout from "../components/layout"
 import AccessDenied from "../components/access-denied"
 
-import { GitHub } from "../components/github"
-import { GitHub2 } from "../components/github2"
+// import { GitHub } from "../components/github"
+// import { GitHub2 } from "../components/github2"
       
 
 export default function ProtectedPage() {
@@ -36,7 +36,7 @@ export default function ProtectedPage() {
         <p>
           <h3>Infinite scrolling</h3>
         </p>
-        <GitHub />
+        {/* <GitHub /> */}
         </div>
       </Layout>
     )
@@ -53,7 +53,8 @@ export default function ProtectedPage() {
       <br/>
       <div >
         <h3>Infinite scrolling using shadowRoot</h3>
-      <GitHub2 />
+      {/* <GitHub2 /> */}
+      {/* <GitHub /> */}
       </div>
     </Layout>
   )

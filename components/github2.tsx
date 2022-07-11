@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react"
-import useSWRInfinite from "swr/infinite"
-import InfiniteScroll from "react-swr-infinite-scroll"
-import ReactShadowRoot from "react-shadow-root"
+// import useSWRInfinite from "swr/infinite"
+// import InfiniteScroll from "react-swr-infinite-scroll"
+// import ReactShadowRoot from "react-shadow-root"
 import  styled  from 'styled-components';
-import { StatefulTable } from 'carbon-addons-iot-react';
+// import { StatefulTable } from 'carbon-addons-iot-react';
 
 
 const PAGE_SIZE = 5
@@ -233,23 +233,6 @@ const columns = [
     name: "Contributed By",
   },
 
-  /* {
-    id: "name",
-    name: "Name",
-  },
-  {
-    id: "brewers_tips",
-    name: "brewers_tips",
-  },
-  {
-    id: "ebc",
-    name: "EBC",
-  },
-  {
-    id: "ph",
-    name: "PH",
-  }, */
-
   {
     id: "srm",
     name: "SRM",
@@ -267,7 +250,7 @@ const flatten:any = (_arr: any) => {
 }
 
 export const GitHub2: React.FC = (props) => {
-  const [data, setData] = useState([])
+  /* const [data, setData] = useState([])
 
   const swr = useSWRInfinite(
     (index, prev) => `https://api.punkapi.com/v2/beers?page=${index + 1}`,
@@ -301,12 +284,12 @@ export const GitHub2: React.FC = (props) => {
     if (!swr?.isValidating) {
       setData(getDataFormat(swr))
     }
-  }, [swr?.isValidating])
+  }, [swr?.isValidating]) */
 
   return (
     <>
-      <div className={"FixedHeightContainer"}>
-        {/* <h2>Title</h2> */}
+      {/* <div className={"FixedHeightContainer"}>
+        
         {swr?.data && (
           <ReactShadowRoot>
             <style>{style}</style>
@@ -331,7 +314,7 @@ export const GitHub2: React.FC = (props) => {
             </div>
           </ReactShadowRoot>
         )}
-      </div>
+      </div> */}
     </>
   )
 }
