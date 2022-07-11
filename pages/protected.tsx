@@ -7,7 +7,7 @@ import AccessDenied from "../components/access-denied"
 // import { GitHub2 } from "../components/github2"
       
 
-export default function ProtectedPage() {
+const ProtectedPage = () => {
   const { data: session, status } = useSession()
   const loading = status === "loading"
   const [content, setContent] = useState()
@@ -59,3 +59,5 @@ export default function ProtectedPage() {
     </Layout>
   )
 }
+
+export default ProtectedPage
